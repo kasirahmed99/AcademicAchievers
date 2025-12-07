@@ -1,4 +1,4 @@
-package com.example.academicachievers
+package com.example.academicachievers.com.example.academicachievers
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
