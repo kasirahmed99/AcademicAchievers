@@ -7,17 +7,14 @@ import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var btnGetStarted: Button
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btnGetStarted = findViewById(R.id.btnGetStarted)
-
+        val btnGetStarted = findViewById<Button>(R.id.btnGetStarted)
 
         btnGetStarted.setOnClickListener {
-            val intent = Intent(this, ScholarshipListActivity::class.java)
+            val intent = Intent(this, MainNavActivity::class.java)
             startActivity(intent)
         }
     }
